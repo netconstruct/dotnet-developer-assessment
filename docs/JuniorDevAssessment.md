@@ -1,4 +1,4 @@
-﻿<img src="./images/iDHL-DarkBlue.svg" alt="IDHL Logo" title="IDHL" width="90">
+﻿<img src="../images/iDHL-DarkBlue.svg" alt="IDHL Logo" title="IDHL" width="90">
 
 # Junior Developer Assessment
 
