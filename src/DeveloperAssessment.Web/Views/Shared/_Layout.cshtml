@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - IDHL</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/DeveloperAssessment.Web.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" aria-label="IDHL">
+                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="90">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: #404b77;
+                                    stroke-width: 0px;
+                                }
+                            </style>
+                        </defs>
+                        <path class="cls-1" d="M379.98,105h218.83c145,0,216.19,80.41,216.19,228.05v413.9c0,147.64-71.19,228.05-216.19,228.05h-218.83V105ZM524.99,250v579.99h71.18c46.14,0,73.82-23.73,73.82-89.64v-400.72c0-65.91-27.68-89.64-73.82-89.64h-71.18Z"></path>
+                        <path class="cls-1" d="M89.98,394.83h145v580.17H89.98V394.83Z"></path>
+                        <path class="cls-1" d="M89.98,105h145v145H89.98V105Z"></path>
+                        <polygon class="cls-1" points="1395.01 105 1395.01 975 1250.01 975 1250.01 539.83 1104.99 539.83 1104.99 975 960 975 960 105 1104.99 105 1104.99 394.83 1250.01 394.83 1250.01 105 1395.01 105"></polygon>
+                        <path class="cls-1" d="M1540.02,105h145v725.2h145v144.8h-290.01V105Z"></path>
+                    </svg>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - IDHL - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
